@@ -1,0 +1,165 @@
+/* General Styles */
+body {
+    font-family: Georgia, serif;
+    line-height: 1.4;
+    font-size: 18px;
+}
+
+.navbar {
+    background-color: #204a84;
+}
+
+.navbar-nav .nav-link {
+    color: white;
+}
+
+.img-fluid-custom {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+}
+
+
+.vidaud {
+    background-color: #204a84;
+    padding: 15px 20px; /* Adjust padding to reduce space */
+}
+
+.embed-responsive {
+    margin-bottom: 10px; /* Reduce margin between video and audio */
+}
+
+.audio-player {
+    width: 100%;
+    background-color: #204a84;
+    margin-top: 5px; /* Further reduce the top margin */
+}
+
+
+h2 {
+    color: #204a84;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.admission {
+    background-color: lightslategray;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.table-responsive {
+    background-color: rgb(231, 217, 219);
+}
+
+/* Course Category Styles */
+.course-category {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 300px;
+    margin: 20px;
+}
+
+.course-category h3 {
+    grid-column: span 2;
+    margin: 0;
+    padding: 10px;
+    background-color: rgb(188, 150, 150);
+    text-align: center;
+    border: 3px solid black;
+}
+
+.course-cell {
+    padding: 10px;
+    border-top: 1px solid #000;
+    text-align: left;
+    border: 2px solid black;
+}
+
+.course-cell:nth-child(odd) {
+    background-color: rgb(253, 209, 209);
+}
+
+.course-cell:nth-child(even) {
+    background-color: rgb(236, 214, 234);
+}
+
+/* Form Styles */
+.form {
+    background-color: rgb(195, 187, 206);
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#abt {
+    background-color: #204a84;
+}
+
+#abt .h2ele {
+    color: white;
+}
+
+#abt a {
+    color: white;
+    text-decoration: none;
+}
+
+#abt a:hover {
+    text-decoration: underline;
+}
+
+#abt .h2ele:hover {
+    background-color: cyan;
+    font-size: x-large;
+}
+
+/* Media Query for Responsive Design */
+@media (max-width: 750px) {
+    .embed-responsive {
+        height: auto;
+    }
+
+    .audio-player {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .vidaud {
+        padding: 15px;
+    }
+
+    #admission-form {
+        width: 90%;
+    }
+
+    .table-responsive {
+        margin-bottom: 1.5rem;
+        overflow-y: hidden;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+}
+
+footer {
+    background-color: #204a84;
+    color: white;
+    padding: 30px 0;
+}
+
+footer h4 {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+footer ul {
+    padding-left: 0;
+}
+
+footer ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+footer ul li a:hover {
+    text-decoration: underline;
+}
